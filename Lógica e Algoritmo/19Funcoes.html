@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <script>
+    function linguagem(elemento) {
+      /* switch(parseInt(elemento)){
+        case 1: alert("Linguagem de marcação");
+        break;
+        case 2: alert("Linguagem de estilos");
+        break;
+        case 3: alert("Linguagem de programação");
+        break;
+                  
+    }*/
+
+      console.log(elemento); // retorna estrutura
+    }
+  </script>
+
+  <body>
+    <select onchange="linguagem(this)">
+      <!--this.value -->
+      <option value="0">Escolha uma linguagem</option>
+      <option value="1">HTML</option>
+      <option value="2">CSS</option>
+      <option value="3">JavaScript</option>
+    </select>
+  </body>
+</html>

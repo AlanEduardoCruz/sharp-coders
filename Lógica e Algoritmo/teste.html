@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    const a = parseInt(prompt("Informe um valor"));
+    const b = parseInt(prompt("Informe um valor"));
+    const c = parseInt(prompt("Informe um valor"));
+
+  const maiorAB = (a + b + Math.abs(a - b)) / 2;
+  const maiorABC = (maiorAB + c + Math.abs(maiorAB - c)) / 2;
+
+  document.write(`${maiorABC} eh o maior`);
+
+
+    </script>
+    
+</body>
+</html>
