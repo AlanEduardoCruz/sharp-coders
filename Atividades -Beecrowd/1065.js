@@ -1,0 +1,14 @@
+var input = require('fs').readFileSync('stdin', 'utf8');
+var lines = input.split('\n');
+
+  let pares = 0;
+
+  for (let i = 0; i < lines.length; i++) {
+    let valores = parseFloat(lines[i]);
+    let resto = valores % 2;
+    if (resto === 0) {
+      pares++;
+    }
+  }
+  console.log(pares + " valores pares");
+
